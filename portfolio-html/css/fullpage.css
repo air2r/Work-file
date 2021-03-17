@@ -1,0 +1,40 @@
+body {
+	overflow: hidden;
+	margin: 0;
+}
+
+.well {
+	transition: 1s cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+.top {
+
+}
+
+.panel {
+	height: 100vh;
+	padding: 1em;
+display: flex;
+align-items: center
+}
+
+/*
+.panel:nth-child(1) {
+	background: #012345;
+}
+
+.panel:nth-child(2) {
+	background: #123456;
+}
+
+.panel:nth-child(3) {
+	background: #234567;
+}
+
+.panel:nth-child(4) {
+	background: #345678;
+}
+
+.panel:nth-child(5) {
+	background: #456789;
+}*/

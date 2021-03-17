@@ -1,0 +1,223 @@
+/* (1366x768) WXGA Display */
+
+@media screen and (min-width: 1366px) and (max-width: 1919px) {}
+
+/*		Medium Device	*/
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .portfolio-content h1 {
+        font-size: 50px;
+        margin: 0;
+    }
+
+
+    #contact form input[type="email"] {
+        margin-left: 14px;
+    }
+
+    .post-reply input[id='name'] {
+        margin-right: 20px;
+        width: 48%;
+    }
+
+    .post-reply input[type="email"] {
+        width: 48%;
+    }
+
+    .blog-img img {
+        height: 514px;
+    }
+
+
+}
+
+
+/*		Tablet Layout: 768px.	*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    section {
+        padding: 60px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 50px;
+    }
+
+    .service-area .section-heading {
+        margin-bottom: 20px;
+    }
+
+    .home {
+        align-items: center;
+        height: inherit;
+    }
+
+    .portfolio-content h1 {
+        font-size: 40px;
+    }
+
+    .portfolio-content {
+        margin-left: 20px;
+    }
+
+    .heading-content {
+        text-align: center;
+    }
+
+
+
+    .skill-wrapper {
+        margin: 50px 0;
+    }
+
+    #contact form {
+        margin-top: 50px;
+    }
+
+    .post-reply input[id='name'] {
+        margin-right: 20px;
+        width: 48%;
+    }
+
+    .post-reply input[type="email"] {
+        width: 48%;
+    }
+
+    .blog-details-right {
+        margin-top: 40px;
+    }
+    .blog-card-text .post-schedule + h4 a {
+    font-size: 19px;
+}
+}
+
+
+/*		Mobile Layout: 320px.    */
+
+@media only screen and (max-width: 767px) {
+ .cd-header {
+  background: #212529 none repeat scroll 0 0;
+ 
+}   
+.header-wrapper {
+  margin-left: 70px;
+}
+ .nav-but-wrap {
+  margin-top: 5px;
+  padding: 13px 0;
+}  
+ .logo {
+    left: 30px;
+    top: 10px;
+}
+ .logo img {
+  width: 76%;
+}   
+    
+.nav-item a {
+  margin-top: 0;
+  padding: 5px;
+     font-size: 15px;
+
+}
+    .menu-profile img {
+  width: 76%;
+}
+    
+    section {
+        padding: 60px 0;
+    }
+
+.section-heading h2 {
+    padding-bottom: 5px;
+    font-size: 25px;
+}
+ .about-area .section-heading h2 {
+   margin-bottom: 30px}  
+    .home {
+        align-items: center;
+        height: 100%;
+    }
+
+    .section-heading {
+        margin-bottom: 0px;
+    }
+
+
+    .home .zoom > img {
+        border-radius: 50%;
+        margin: 0;
+        width: 100%;
+    }
+
+    .home .zoom::before,
+    .home .zoom::after {
+        display: none;
+    }
+
+    .home .zoom {
+        border: 10px solid;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .portffolio-photo {
+        margin-top: 50px;
+    }
+
+    .portffolio-photo .zoom img:hover {
+        transform: scale(1.1) translateX(1%);
+    }
+
+    .portfolio-content {
+        margin-left: 0;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .portfolio-content h1 {
+        font-size: 33px;
+    }
+
+    .social-media > ul {
+        display: inline-flex;
+    }
+    .typewrite {
+        font-size: 25px;
+    }
+    .hire {
+        display: inherit;
+    }
+
+    .skill-wrapper {
+        margin: 50px 0;
+    }
+
+    .single-client {
+        padding: 30px 15px;
+    }
+.client .owl-dots {
+    display: none;
+}
+    #contact form {
+        margin-top: 50px;
+    }
+
+    #contact form input[type="text"],
+    #contact form input[type="email"] {
+        width: 100%;
+    }
+
+    #contact form input[type="email"] {
+        margin-left: 0;
+    }
+
+       #contact form button[type='submit'] {
+    width: 100%;
+}
+    
+    
+}
+
+/*		Wide Mobile Layout: 480px.    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
