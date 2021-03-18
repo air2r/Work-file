@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Audimat Mono';
+    src: url('AudimatMonoSmallCaps.eot');
+    src: url('AudimatMonoSmallCaps.eot?#iefix') format('embedded-opentype'),
+        url('AudimatMonoSmallCaps.woff2') format('woff2'),
+        url('AudimatMonoSmallCaps.woff') format('woff'),
+        url('AudimatMonoSmallCaps.ttf') format('truetype'),
+        url('AudimatMonoSmallCaps.svg#AudimatMonoSmallCaps') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
