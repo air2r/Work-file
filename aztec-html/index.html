@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aztec</title>
+    <link rel="shortcut icon" type="image/png" href="assets/image/fav-icon.jpg">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- *************** Header Area Start ***************-->
+    <header class="header-area">
+        <div class="top-header">
+            <div class="container-warp">
+                <div class="top-flex">
+                    <div class="top-link">
+                        <a href="">FREE DELIVERY ON UK ORDERS</a>
+                    </div>
+                    <div class="top-menu">
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Wholesale</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Terms and Condition</a></li>
+                        </ul>
+                    </div>
+                    <div class="top-user">
+                        <ul>
+                            <li class="openBtn" onclick="openSearch()"><span><img src="assets/image/src-btn.png" alt="Src"></span></li>
+                            <li class="modal-toggle"><img src="assets/image/user.png" alt="User"></li>
+                            <li class="ad-cart"><span><img src="assets/image/cart-icon.png" alt="Card"></span>
+                                <div class="add-product">
+                                    <div class="add-product-flex">
+                                        <div class="add-pd-img">
+                                            <img src="assets/image/product-1.png" alt="product">
+                                        </div>
+                                        <div class="add-pd-nane">
+                                            <h6>Spearmint CBD Oil Drops – 500mg</h6>
+                                            <p><span>1 X </span> £44.00</p>
+                                        </div>
+                                        <div class="close-btn"> X </div>
+                                    </div>
+                                    <div class="add-product-flex">
+                                        <div class="add-pd-img">
+                                            <img src="assets/image/product-6.png" alt="product">
+                                        </div>
+                                        <div class="add-pd-nane">
+                                            <h6>Spearmint CBD Oil Drops – 500mg</h6>
+                                            <p><span>1 X </span> £44.00</p>
+                                        </div>
+                                        <div class="close-btn"> X </div>
+                                    </div>
+                                    <div class="pro-all-am">
+                                        <h6><span>Subtotal:</span> £44.99</h6>
+                                    </div>
+                                    <div class="view-cart">
+                                        <button class="theme-btn">View cart</button>
+                                        <button class="theme-btn checbtn">Checkout</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu_overlay"></div>
+        <div class="menu-area">
+            <div class="container-warp">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/image/logo.jpg" alt="Log0"></a>
+                </div>
+                <div class="main-menu">
+                    <div class="mo-src">
+                        <form action="">
+                            <input type="search" placeholder="Search...">
+                            <button class="mo-src-btn"><img src="assets/image/src-btn.png" alt=""></button>
+                        </form>
+                    </div>
+                    <ul>
+                        <li class="sub-menu"><a href="#" class="menu_icon">Shop</a>
+                            <ul class="sub-menu-area">
+                                <li><a href="#">FLY CBD – NEW</a></li>
+                                <li><a href="#">FLY CBD E-PENS</a></li>
+                                <li><a href="#">AZTEC CBD E LIQUID</a></li>
+                                <li><a href="#">AZTEC CBD OIL</a></li>
+                                <li><a href="#">AZTEC CBD WAX – NEW</a></li>
+                                <li><a href="#">KUSHMAN TERPENES</a></li>
+                                <li><a href="#">VAPORIZER KIT</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">How CBD Works</a></li>
+                        <li><a href="#">Lab Report </a></li>
+                        <li class="spass"><a href="#"></a></li>
+                        <li class="ml-30"><a href="#">Latest news</a></li>
+                        <li><a href="#">Wholesale</a></li>
+                        <li><a href="#">Store Locator</a></li>
+                        <li class="modal-toggle pc-none"><img src="assets/image/user.png" alt="User"> Login </li>
+                    </ul>
+                    <div class="mo-socail">
+                        <a href="#"><img src="assets/image/facebook.png" alt="Face-book"></a>
+                        <a href="#"><img src="assets/image/twitter.png" alt="twitter"></a>
+                        <a href="#"><img src="assets/image/instragram.png" alt="instragram"></a>
+                        <a href="#"><img src="assets/image/email.png" alt="email"></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="mobile-menu">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+
+
+
+        <div id="myOverlay" class="overlay">
+            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+            <div class="overlay-content">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search" name="search">
+                </form>
+            </div>
+        </div>
+
+        <div class="modal">
+            <div class="modal-overlay modal-toggle"></div>
+            <div class="modal-wrapper modal-transition">
+                <div class="modal-header">
+                    <button class="modal-close modal-toggle">
+                        <div class="icon-close icon"></div> X
+                    </button>
+                    <div class="login-box-area">
+                        <div class="login-box">
+                            <form action="">
+                                <h2>Login</h2>
+                                <div class="input-box">
+                                    <input type="text" placeholder="Username or email address *">
+                                    <input type="password" placeholder="Password *">
+                                </div>
+                                <div class="remeber"><label class=""> <input class="" name="rememberme" type="checkbox" id="rememberme"> <span>Remember me</span> </label> </div>
+                                <button class="log-in">Login</button>
+                                <a href="">Lost your password?</a>
+                            </form>
+                        </div>
+
+                        <div class="login-box">
+                            <form action="">
+                                <h2>REGISTER</h2>
+                                <div class="input-box">
+                                    <input type="email" placeholder="Email address *">
+                                    <input type="password" placeholder="Password *">
+                                </div>
+
+                                <button class="log-in" type="submit">REGISTER</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!-- *************** Header Area End ***************-->
+    <!-- *************** Slider Area Start ***************-->
+    <section class="slider-area">
+        <div class="sliter-items owl-carousel">
+            <div class="sliter-item slider-bg-1">
+                <div class="container-warp">
+                    <a href="" class="slide-content-area">
+                        <div class="slide-content">
+                            <h2>Welcome To</h2>
+                            <h1>Aztec Cbd</h1>
+                            <p> Vape oil & Tinctures (Drops) Broad Spectrum CBD with <br>
+                                Organic terpenes. Amazing flavours without the earthy taste</p>
+                        </div>
+                        <div class="slide-img">
+                            <img src="assets/image/slider-1.png" alt="Slider-1">
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="sliter-item slider-bg-1">
+                <div class="container-warp">
+                    <a href="" class="slide-content-area">
+                        <div class="slide-content">
+                            <h2>Welcome To</h2>
+                            <h1>Aztec Cbd</h1>
+                            <p> Vape oil & Tinctures (Drops) Broad Spectrum CBD with <br>
+                                Organic terpenes. Amazing flavours without the earthy taste</p>
+                        </div>
+                        <div class="slide-img">
+                            <img src="assets/image/slider-1.png" alt="Slider-1">
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="sliter-item slider-bg-1">
+                <div class="container-warp">
+                    <a href="" class="slide-content-area">
+                        <div class="slide-content">
+                            <h2>Welcome To</h2>
+                            <h1>Aztec Cbd</h1>
+                            <p> Vape oil & Tinctures (Drops) Broad Spectrum CBD with <br>
+                                Organic terpenes. Amazing flavours without the earthy taste</p>
+                        </div>
+                        <div class="slide-img">
+                            <img src="assets/image/slider-1.png" alt="Slider-1">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- *************** Slider Area End ***************-->
+
+
+
+
+    <!-- *************** Card-slider Area Start ***************-->
+    <div class="add-pro-area">
+        <div class="add-pro-items">
+            <a href="" class="add-pro-item">
+                <div class="add-pro-contnt">
+                    <img src="assets/image/sm-slider-1.png" alt="sm">
+                    <h4>AZTEC CBD <br>E LIQUID <img src="assets/image/arrow.png" alt="arrow"></h4>
+                </div>
+            </a>
+            <a href="" class="add-pro-item">
+                <div class="add-pro-contnt">
+                    <img src="assets/image/sm-slider-2.png" alt="sm">
+                    <h4>AZTEC CBD Oil</h4>
+                </div>
+            </a>
+            <a href="" class="add-pro-item">
+                <div class="add-pro-contnt">
+                    <img src="assets/image/sm-slider-3.png" alt="sm">
+                    <h4>VAPORIZER KIT</h4>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- *************** Card-slider Area End ***************-->
+
+
+    <!-- *************** BEST SELLERS Area Start ***************-->
+    <div class="best-seller-area section-padding">
+        <div class="container-warp">
+            <div class="section-heading">
+                <h2>BEST CBD SELLING PRODUCTS</h2>
+            </div>
+            <div class="best-products">
+                <div class="best-product">
+                    <a href="" class="best-pro-img">
+                        <img src="assets/image/product-1.png" alt="product">
+                    </a>
+                    <h4 class="product-name">cbd lIQUID</h4>
+                    <p><a href="">Spearmint CBD Oil Drops – 500mg</a></p>
+                    <p class="bt-price">£44.00 <del>£59.99</del></p>
+                    <div class="buy-now">
+                        <a href="#" class="buy-left">bUY NOW</a>
+                    </div>
+                    <div class="sale">
+                        <p>Sale</p>
+                    </div>
+                </div>
+
+                <div class="best-product">
+                    <a href="" class="best-pro-img">
+                        <img src="assets/image/product-2.png" alt="product">
+                    </a>
+                    <h4 class="product-name">cbd lIQUID</h4>
+                    <p><a href="">Spearmint CBD Oil Drops – 500mg</a></p>
+                    <p class="bt-price">£44.00 <del>£59.99</del></p>
+                    <div class="buy-now">
+                        <a href="#" class="buy-left">bUY NOW</a>
+                    </div>
+                </div>
+
+                <div class="best-product">
+                    <a href="" class="best-pro-img">
+                        <img src="assets/image/product-3.png" alt="product">
+                    </a>
+                    <h4 class="product-name">cbd lIQUID</h4>
+                    <p><a href="">Spearmint CBD Oil Drops – 1000mg</a></p>
+                    <p class="bt-price">£69.00 <del>£89.99</del></p>
+                    <div class="buy-now">
+                        <a href="#" class="buy-left">bUY NOW</a>
+                    </div>
+                    <div class="sale">
+                        <p>Sale</p>
+                    </div>
+                </div>
+
+
+                <div class="best-product">
+                    <a href="" class="best-pro-img">
+                        <img src="assets/image/product-4.png" alt="product">
+                    </a>
+                    <h4 class="product-name">cbd lIQUID</h4>
+                    <p><a href="">Spearmint CBD Oil Drops – 500mg</a></p>
+                    <p class="bt-price">£29.00 <del>£39.99</del></p>
+                    <div class="buy-now">
+                        <a href="#" class="buy-left">bUY NOW</a>
+                    </div>
+                    <div class="sale">
+                        <p>Sale</p>
+                    </div>
+                </div>
+
+
+                <div class="best-product">
+                    <a href="" class="best-pro-img">
+                        <img src="assets/image/product-5.png" alt="product">
+                    </a>
+                    <h4 class="product-name">cbd lIQUID</h4>
+                    <p><a href="">Spearmint CBD Oil Drops – 500mg</a></p>
+                    <p class="bt-price">£29.00 <del>£39.99</del></p>
+                    <div class="buy-now">
+                        <a href="#" class="buy-left">bUY NOW</a>
+                    </div>
+                    <div class="sale">
+                        <p>Sale</p>
+                    </div>
+                </div>
+
+
+                <div class="best-product">
+                    <a href="" class="best-pro-img">
+                        <img src="assets/image/product-6.png" alt="product">
+                    </a>
+                    <h4 class="product-name">cbd lIQUID</h4>
+                    <p><a href="">Spearmint CBD Oil Drops – 500mg</a></p>
+                    <p class="bt-price">£29.00 <del>£39.99</del></p>
+                    <div class="buy-now">
+                        <a href="#" class="buy-left">bUY NOW</a>
+                    </div>
+                    <div class="sale">
+                        <p>Sale</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- *************** BEST SELLERS Area End ***************-->
+    <!-- *************** BEST SELLERS Area Start ***************-->
+
+    <div class="bst-cb-prod-area section-padding">
+        <div class="container-warp">
+            <div class="section-heading">
+                <h2>New arrivals</h2>
+            </div>
+            <div class="bst-cb-prod owl-carousel">
+                <div class="best-product">
+                    <a href="" class="best-pro-img">
+                        <img src="assets/image/product-1.png" alt="product">
+                    </a>
+                    <h4 class="product-name">cbd lIQUID</h4>
+                    <p><a href="">Spearmint CBD Oil Drops – 500mg</a></p>
+                    <p class="bt-price">£44.00 <del>£59.99</del></p>
+                    <div class="buy-now">
+                        <a href="#" class="buy-left">bUY NOW</a>
+                    </div>
+                    <div class="sale">
+                        <p>Sale</p>
+                    </div>
+                </div>
+
+                <div class="best-product">
+                    <a href="" class="best-pro-img">
+                        <img src="assets/image/product-2.png" alt="product">
+                    </a>
+                    <h4 class="product-name">cbd lIQUID</h4>
+                    <p><a href="">Spearmint CBD Oil Drops – 500mg</a></p>
+                    <p class="bt-price">£44.00 <del>£59.99</del></p>
+                    <div class="buy-now">
+                        <a href="#" class="buy-left">bUY NOW</a>
+                    </div>
+                </div>
+                <div class="best-product">
+                    <a href="" class="best-pro-img">
+                        <img src="assets/image/product-2.png" alt="product">
+                    </a>
+                    <h4 class="product-name">cbd lIQUID</h4>
+                    <p><a href="">Spearmint CBD Oil Drops – 500mg</a></p>
+                    <p class="bt-price">£44.00 <del>£59.99</del></p>
+                    <div class="buy-now">
+                        <a href="#" class="buy-left">bUY NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- *************** BEST SELLERS Area End ***************-->
+    <!-- *************** Signup Area Start ***************-->
+    <div class="signup-area">
+        <div class="container-warp">
+            <div class="signup-flex">
+                <div class="singup-cont">
+                    <h2>Subscribe</h2>
+                </div>
+                <div class="singup-area">
+                    <form action="">
+                        <div class="singup-form-items">
+                            <input type="text" placeholder="Name">
+                            <input type="email" placeholder="Email">
+                            <button type="submit" class="sign-btn">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- *************** Signup Area End ***************-->
+    <!-- *************** CBD News Area Start ***************-->
+    <div class="cbd-news-area section-padding">
+        <div class="section-heading">
+            <h2>CBD NEWS</h2>
+        </div>
+        <div class="container-warp">
+            <div class="cbd-items owl-carousel">
+                <div class="cbd-item">
+                    <div class="cbd-img"><img src="assets/image/cbd-1.jpg" alt="Cbd"></div>
+                    <div class="cbd-content">
+                        <h3><a href="">CBD Oil Benefits & How to use it?</a></h3>
+                        <p>CBD Oil Benefits & How to use it? Cannabidiol (CBD) is emerging as a powerful [...]</p>
+                        <a href="" class="read-btn">READ MORE</a>
+                    </div>
+                </div>
+
+
+                <div class="cbd-item">
+                    <div class="cbd-img"><img src="assets/image/cbd-2.jpg" alt="Cbd"></div>
+                    <div class="cbd-content">
+                        <h3><a href="">CBD Oil Benefits & How to use it?</a></h3>
+                        <p>CBD Oil Benefits & How to use it? Cannabidiol (CBD) is emerging as a powerful [...]</p>
+                        <a href="" class="read-btn">READ MORE</a>
+                    </div>
+                </div>
+
+
+                <div class="cbd-item">
+                    <div class="cbd-img"><img src="assets/image/cbd-3.jpg" alt="Cbd"></div>
+                    <div class="cbd-content">
+                        <h3><a href="">CBD Oil Benefits & How to use it?</a></h3>
+                        <p>CBD Oil Benefits & How to use it? Cannabidiol (CBD) is emerging as a powerful [...]</p>
+                        <a href="" class="read-btn">READ MORE</a>
+                    </div>
+                </div>
+
+
+
+                <div class="cbd-item">
+                    <div class="cbd-img"><img src="assets/image/cbd-1.jpg" alt="Cbd"></div>
+                    <div class="cbd-content">
+                        <h3><a href="">CBD Oil Benefits & How to use it?</a></h3>
+                        <p>CBD Oil Benefits & How to use it? Cannabidiol (CBD) is emerging as a powerful [...]</p>
+                        <a href="" class="read-btn">READ MORE</a>
+                    </div>
+                </div>
+
+                <div class="cbd-item">
+                    <div class="cbd-img"><img src="assets/image/cbd-2.jpg" alt="Cbd"></div>
+                    <div class="cbd-content">
+                        <h3><a href="">CBD Oil Benefits & How to use it?</a></h3>
+                        <p>CBD Oil Benefits & How to use it? Cannabidiol (CBD) is emerging as a powerful [...]</p>
+                        <a href="" class="read-btn">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- *************** CBD News Area End ***************-->
+    <!-- *************** organic Area Start ***************-->
+    <div class="organic-area">
+        <div class="container-warp">
+            <div class="organic-flex">
+                <div class="organic-img">
+                    <img src="assets/image/organic.png" alt="organic">
+                </div>
+                <div class="organic-cont">
+                    <h2>organic</h2>
+                    <p>We make no compromises when it comes to quality. This begins by selecting local, European-certified seeds. Because we have plenty of experience, we can choose the perfect strain for certain formulations with the proper CBD percentage and cannabinoid ratio. We then place the precious seeds into carefully selected, fertile soil. For this task, we revived some traditional European hemp-growing farms in Europe.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- *************** organic Area End ***************-->
+
+    <!-- *************** Footer Area Start ***************-->
+    <footer class="footer-area">
+        <div class="container-warp">
+            <p>All products advertised herein by AZTEC CBD are not in any shape or form advertised for sale as medicinal products. This product is not for use by or sale to persons under the age of 18. This product should be used only as directed on the label. It should not be used if you are pregnant or nursing. Consult with a physician before use if you have a serious medical condition or use prescription medications. Doctor's advice should be sought before using this and any supplemental dietary product. All trademarks and copyrights are property of their respective owners and are not affiliated with nor do they endorse this product. This product i s not intended to diagnose, treat, cure or prevent any disease. By using this site you agree to follow the Privacy Policy and all Terms & Conditions printed on this site. Void Where Prohibited By Law.</p>
+            <div class="top-menu footer-menu">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Wholesale</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Terms and Condition</a></li>
+                </ul>
+            </div>
+            <div class="footer-flex">
+                <div class="footer-socail">
+                    <a href=""><img src="assets/image/facebook.png" alt="Face-book"></a>
+                    <a href=""><img src="assets/image/twitter.png" alt="twitter"></a>
+                    <a href=""><img src="assets/image/instragram.png" alt="instragram"></a>
+                    <a href=""><img src="assets/image/email.png" alt="email"></a>
+                </div>
+                <div class="footer-copyright">
+                    <p>Copyright © 2020 azteccbd. All rights reserved.</p>
+                </div>
+                <div class="footer-copy">
+                    <a href=""><img src="assets/image/card-1.jpg" alt="Card"></a>
+                    <a href=""><img src="assets/image/card-2.jpg" alt="Card"></a>
+                    <a href=""><img src="assets/image/card-3.jpg" alt="Card"></a>
+                    <a href=""><img src="assets/image/card-4.jpg" alt="Card"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- *************** Footer Area End ***************-->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+    <script src="assets/js/js.js"></script>
+
+</body>
+
+</html>
